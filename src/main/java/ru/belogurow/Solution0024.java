@@ -13,14 +13,14 @@ import ru.belogurow.common.ListNode;
 public class Solution0024 {
 
 	public ListNode swapPairs(ListNode current) {
-		if (current == null || current.next == null) {
+		if (current == null || current.getNext() == null) {
 			return current;
 		}
 
-		ListNode secondNode = current.next;
-		ListNode thirdNode = secondNode.next;
-		current.next = swapPairs(thirdNode); // current already second
-		secondNode.next = current; // second already current
+		ListNode secondNode = current.getNext();
+		ListNode thirdNode = secondNode.getNext();
+		current.setNext(swapPairs(thirdNode)); // current already second
+		secondNode.setNext(current); // second already current
 
 		return secondNode;
 	}

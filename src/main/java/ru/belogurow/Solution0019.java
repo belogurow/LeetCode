@@ -19,7 +19,7 @@ public class Solution0019 {
 		ListNode currentNode = head;
 		while (currentNode != null) {
 			nodeWithIndex.put(i++, currentNode);
-			currentNode = currentNode.next;
+			currentNode = currentNode.getNext();
 		}
 
 		if (n == 1) {
@@ -27,11 +27,11 @@ public class Solution0019 {
 				return null;
 			}
 
-			nodeWithIndex.get(i - n - 1).next = null;
+			nodeWithIndex.get(i - n - 1).setNext(null);
 		} else if (i - n == 0) { // remove first element
 			head = nodeWithIndex.get(i - n + 1);
 		} else {
-			nodeWithIndex.get(i - n - 1).next = nodeWithIndex.get(i - n + 1);
+			nodeWithIndex.get(i - n - 1).setNext(nodeWithIndex.get(i - n + 1));
 		}
 
 		return head;

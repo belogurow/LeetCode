@@ -31,13 +31,13 @@ public class Solution0023 {
 				continue;
 			}
 
-			if (lists[i].val < minimum) {
-				minimum = lists[i].val;
+			if (lists[i].getVal() < minimum) {
+				minimum = lists[i].getVal();
 				idxWithMin = i;
 			}
 		}
 
-		lists[idxWithMin] = lists[idxWithMin].next;
+		lists[idxWithMin] = lists[idxWithMin].getNext();
 		return minimum;
 	}
 }
