@@ -45,8 +45,6 @@ public class ListNode {
 			currentNode = currentNode.next;
 		}
 
-		System.out.println(values);
-
 		return values;
 	}
 }
