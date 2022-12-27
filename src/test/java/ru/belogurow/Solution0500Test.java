@@ -3,9 +3,9 @@ package ru.belogurow;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class Solution500Test {
+class Solution0500Test {
 
-    private final Solution500 solution = new Solution500();
+    private final Solution0500 solution = new Solution0500();
 
     @Test
     void findWords_VerifyAnswer() {

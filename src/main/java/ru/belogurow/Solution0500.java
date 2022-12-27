@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * @see <a href="https://leetcode.com/problems/keyboard-row/">500. Keyboard Row</a>
  */
-public class Solution500 {
+public class Solution0500 {
 
     private static final String[] KEYBOARD_ROWS = new String[]
             {"qwertyuiop", "asdfghjkl", "zxcvbnm"};
