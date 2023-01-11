@@ -8,6 +8,8 @@ import java.util.Set;
 
 /**
  * @see <a href="https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/">1443. Minimum Time to Collect All Apples in a Tree</a>
+ *
+ * todo try recursive method
  */
 public class Solution1443 {
 
