@@ -12,6 +12,7 @@ public class Node {
 
     public Node(int val) {
         this.val = val;
+        this.children = List.of();
     }
 
     public Node(int val, List<Node> children) {
