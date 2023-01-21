@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @see <a href="https://leetcode.com/problems/decompress-run-length-encoded-list/">1346. Check If N and Its Double Exist</a>
+ * @see <a href="https://leetcode.com/problems/check-if-n-and-its-double-exist/">1346. Check If N and Its Double Exist</a>
  */
 public class Solution1346 {
 
