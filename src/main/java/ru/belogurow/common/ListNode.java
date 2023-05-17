@@ -49,4 +49,19 @@ public class ListNode {
 
 		return values;
 	}
+
+	public static ListNode convertToNodes(Integer... values) {
+		if (values == null || values.length == 0) {
+			return null;
+		}
+
+		ListNode head = new ListNode(-1);
+		ListNode prev = head;
+		for (Integer value : values) {
+			prev.next = new ListNode(value);
+			prev = prev.next;
+		}
+
+		return head.next;
+	}
 }
