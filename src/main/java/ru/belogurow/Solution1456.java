@@ -3,7 +3,7 @@ package ru.belogurow;
 /**
  * @see <a href="https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/">1456. Maximum Number of Vowels in a Substring of Given Length</a>
  */
-public class Solution0134 {
+public class Solution1456 {
 
     public int maxVowels(String s, int k) {
         int[] vowels = new int[26];
