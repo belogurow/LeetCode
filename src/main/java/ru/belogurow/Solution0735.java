@@ -8,7 +8,7 @@ import java.util.Stack;
 public class Solution0735 {
 
     public int[] asteroidCollision(int[] asteroids) {
-        Stack<Integer> st = new Stack<Integer>();
+        Stack<Integer> st = new Stack<>();
 
         for (int ast : asteroids) {
             if (ast >= 0 || st.isEmpty()) {
