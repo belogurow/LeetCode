@@ -1,8 +1,6 @@
 package ru.belogurow;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * @see <a href="https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/">2824. Count Pairs Whose Sum is Less than Target</a>
