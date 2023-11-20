@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @see <a href="https://leetcode.com/problems/removing-stars-from-a-string">LeetCode link</a>
+ * @see <a href="https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/">2391. Minimum Amount of Time to Collect Garbage</a>
  */
 public class Solution2391 {
 
