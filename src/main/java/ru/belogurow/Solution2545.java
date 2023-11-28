@@ -9,19 +9,14 @@ import java.util.PriorityQueue;
  */
 public class Solution2545 {
 
-	public int[][] sortTheStudents(int[][] score, int k) {
-		PriorityQueue<int[]> queue = new PriorityQueue<>(new Comparator<int[]>(){
-			public int compare(int[] a ,int[] b) {
-				return b[k]-a[k];
-			}
-		});
-
+    public int[][] sortTheStudents(int[][] score, int k) {
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> b[k] - a[k]);
         Collections.addAll(queue, score);
 
-		for (int i = 0; i < score.length; i++) {
-			score[i] = queue.poll();
-		}
+        for (int i = 0; i < score.length; i++) {
+            score[i] = queue.poll();
+        }
 
-		return score;
-	}
+        return score;
+    }
 }
