@@ -5,29 +5,50 @@ package ru.belogurow;
  */
 public class Solution0074 {
 
-	public boolean searchMatrix(int[][] matrix, int target) {
-		int n = matrix[0].length;
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int row = searchRow(matrix, target);
+        if (row == -1) {
+            return false;
+        }
 
-		for (int[] row : matrix) {
-			if (target < row[0]) {
-				return false;
-			}
+        return searchCell(matrix[row], target);
+    }
 
-			if (target <= row[n - 1]) {
-				return searchInRow(row, target);
-			}
-		}
+    private int searchRow(int[][] matrix, int target) {
+        int left = 0;
+        int right = matrix.length - 1;
 
-		return false;
-	}
+        while (left <= right) {
+            int mid = (left + right) / 2;
 
-	private boolean searchInRow(int[] row, int target) {
-		for (int j : row) {
-			if (j == target) {
-				return true;
-			}
-		}
+            if (matrix[mid][0] <= target && target <= matrix[mid][matrix[0].length - 1]) {
+                return mid;
+            } else if (target < matrix[mid][0]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
 
-		return false;
-	}
+        return -1;
+    }
+
+    private boolean searchCell(int[] arr, int target) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+
+            if (target == arr[mid]) {
+                return true;
+            } else if (target < arr[mid]) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return false;
+    }
 }
